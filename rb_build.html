@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Red Ball Pizza Build a Pizza</title>
+   <link href="css/bootstrap.css" rel="stylesheet" />
+   <link href="css/rb_styles2.css" rel="stylesheet" />
+</head>
+<body>
+   <header>
+      <img src="media/rb_logo2.png" alt="Red Ball Pizza" id="logoimg" />
+      <nav> <a id="navicon" href="#"><img src="media/rb_navicon2.png" alt="" /></a>
+         <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">directions</a></li>
+            <li><a href="#">coupons</a></li>
+            <li><a href="#">orders</a></li>
+            <li><a href="#">catering</a></li>
+            <li><a href="#">reviews</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section>
+      <h1>Build your Pizza</h1>
+      <p>Everyone has their own pizza preferences. Build your special pizza by selecting from the ingredients below. You can divide your pizza into two regions to give your friends a wide choice of toppings
+      and flavors.</p>
+      <form id="survey" action="http://www.example.com/redball/survey" method="post">
+         <div class="formRow">
+            <label for="quantityBox">Quantity</label> 
+            <select name="pizzaQuantity" id="quantityBox" size="1" multiple>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+            </select>
+         </div>
+         <div class="formRow">
+            <img src="media/rb_sizes.png" alt="">
+            <label for="sizeBox">Pizza Size</label> 
+            <input type="range" name="pizzaSize" id="sizeBox" value="14" step="2" min="10" max="16">
+         </div>
+         <div class="formRow">
+            <label for="crustBox">Pizza Crust</label> 
+            <select name="pizzaCrust" id="crustBox" size="1">
+               <option value="thin">Thin</option>
+               <option value="thick">Thick</option>
+               <option value="stuffed">Stuffed</option>
+               <option value="pan">Pan</option>
+            </select>
+         </div>
+         <div class="formRow">
+            <input type="checkbox" name="doubleCheese" id="cheeseBox">
+            <label for="cheeseBox">Double Cheese</label> 
+            <input type="checkbox" name="doubleSause" id="sauseBox">
+            <label for="sauseBox">Double Sause</label> 
+         </div>
+         <fieldset id="meatToppings">
+            <legend>Meat Toppings</legend>
+            <div class="formRow">
+               <label>location</label>
+               <img src="media/rb_full.png" alt="">
+               <img src="media/rb_left.png" alt="">
+               <img src="media/rb_right.png" alt="">
+               <img src="media/rb_none.png" alt="">
+            </div>
+            <div class="formRow">
+               <label for="pepp">Pepperoni</label>
+               <input type="radio" name="pep" id="pepp" value="full">
+               <input type="radio" name="pep" id="pepp" value="left">
+               <input type="radio" name="pep" id="pepp" value="right">
+               <input type="radio" name="pep" id="pepp" value="none" checked>
+            </div>
+            <div class="formRow">
+               <label for="ham">Ham</label>
+               <input type="radio" name="ham" id="ham" value="full">
+               <input type="radio" name="ham" id="ham" value="left">
+               <input type="radio" name="ham" id="ham" value="right">
+               <input type="radio" name="ham" id="ham" value="none" checked>
+            </div>
+            <div class="formRow">
+               <label for="pork">Pork</label>
+               <input type="radio" name="pork" id="pork" value="full">
+               <input type="radio" name="pork" id="pork" value="left">
+               <input type="radio" name="pork" id="pork" value="right">
+               <input type="radio" name="pork" id="pork" value="none" checked>
+            </div>
+            <div class="formRow">
+               <label for="sausage">Sausage</label>
+               <input type="radio" name="sau" id="sausage" value="full">
+               <input type="radio" name="sau" id="sausage" value="left">
+               <input type="radio" name="sau" id="sausage" value="right">
+               <input type="radio" name="sau" id="sausage" value="none" checked>
+            </div>
+            <div class="formRow">
+               <label for="chicken">Chicken</label>
+               <input type="radio" name="chi" id="chicken" value="full">
+               <input type="radio" name="chi" id="chicken" value="left">
+               <input type="radio" name="chi" id="chicken" value="right">
+               <input type="radio" name="chi" id="chicken" value="none" checked>
+            </div>
+         </fieldset>
+         <fieldset id="vegetableToppings">
+            <legend>Vegetable Toppings</legend>
+            <div class="formRow">
+               <label>location</label>
+               <img src="media/rb_full.png" alt="">
+               <img src="media/rb_left.png" alt="">
+               <img src="media/rb_right.png" alt="">
+               <img src="media/rb_none.png" alt="">
+            </div>
+            <div class="formRow">
+               <label for="mushrooms">Mushrooms</label>
+               <input type="radio" name="mush" id="mushrooms" value="full">
+               <input type="radio" name="mush" id="mushrooms" value="left">
+               <input type="radio" name="mush" id="mushrooms" value="right">
+               <input type="radio" name="mush" id="mushrooms" value="none" checked>
+            </div>
+            <div class="formRow">
+               <label for="greenPeppers">Green Peppers</label>
+               <input type="radio" name="gp" id="greenPeppers" value="full">
+               <input type="radio" name="gp" id="greenPeppers" value="left">
+               <input type="radio" name="gp" id="greenPeppers" value="right">
+               <input type="radio" name="gp" id="greenPeppers" value="none" checked>
+            </div>
+            <div class="formRow">
+               <label for="onions">Onions</label>
+               <input type="radio" name="oni" id="onions" value="full">
+               <input type="radio" name="oni" id="onions" value="left">
+               <input type="radio" name="oni" id="onions" value="right">
+               <input type="radio" name="oni" id="onions" value="none" checked>
+            </div>
+            <div class="formRow">
+               <label for="tomatoes">Tomatoes</label>
+               <input type="radio" name="tom" id="tomatoes" value="full">
+               <input type="radio" name="tom" id="tomatoes" value="left">
+               <input type="radio" name="tom" id="tomatoes" value="right">
+               <input type="radio" name="tom" id="tomatoes" value="none" checked>
+            </div>
+            <div class="formRow">
+               <label for="jalapenos">Jalapenos</label>
+               <input type="radio" name="jal" id="jalapenos" value="full">
+               <input type="radio" name="jal" id="jalapenos" value="left">
+               <input type="radio" name="jal" id="jalapenos" value="right">
+               <input type="radio" name="jal" id="jalapenos" value="none" checked>
+            </div>
+         </fieldset>
+         <div id="buttons">
+            <input type="submit" value="Add to your Order">
+         </div>
+      </form>
+   </section>
+   <footer>
+      <h1>ORDER</h1>
+      <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a> <a href="#">Wings</a> <a href="#">Sides</a> <a href="#">Salads</a> <a href="#">Drinks</a> <a href="#">Desserts</a>
+      <h1>ABOUT US</h1>
+      <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a> <a href="#">School Lunches</a>
+      <h1>CUSTOMER SERVICE</h1>
+      <a href="#">Gluten Free Crusts</a> <a href="#">Contact Us</a> <a href="#">FAQs</a>
+      <h1>MY ACCOUNT</h1>
+      <a href="#">Create an Account</a> <a href="#">Sign In</a> <a href="#">Order Status</a>
+      <h1>NUTRITION</h1>
+      <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
+      <h1>POLICIES</h1>
+      <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+      <address>
+      Red Ball Pizza <br />
+      811 Beach Drive <br />
+      Ormond Beach, FL  32175 <br />
+      (386) 555 - 7499
+   </address>
+   </footer>
+   <script src="js/rb_formsubmit2.js"></script>
+</body>
+</html>
